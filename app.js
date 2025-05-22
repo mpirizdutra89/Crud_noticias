@@ -3,7 +3,7 @@ const path = require('path')
 const app = express()
 const dotenv = require('dotenv');
 dotenv.config();
-const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000
+const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3001
 const { notFound, errorHandler } = require('./middlewares/errorHandler');
 
 const inicioRouter = require('./routes/inicio')
