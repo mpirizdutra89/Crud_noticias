@@ -1,0 +1,20 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Se inaugura nuevo parque tecnológico en la ciudad",
+      "descripcion": "Este lunes se inauguró un nuevo parque tecnológico en el centro de la ciudad... ",
+      "categoria": "Tecnología",
+      "fecha": "2025-04-18",
+      "imagenDestacada": "/img/noticia/1745250040873.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "martin",
+      "descripcion": "hola mundo",
+      "categoria": "Actualidad",
+      "fecha": "2025-04-22",
+      "imagenDestacada": "/img/noticia/1745250040873.jpg"
+    }
+  ]
+}

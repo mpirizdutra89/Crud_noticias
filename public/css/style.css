@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding:60px 0px;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .campo input,
+  .campo select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .campo input:focus,
+  .campo select:focus {
+    border-color: #74ebd5;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #74c0fc;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4dabf7;
+  }
+
+  
+  .container {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+    animation: bounce 1s infinite alternate;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #74c0fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #4dabf7;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+#datos-container {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#datos-container h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #007bff;
+}
+
+#lista-datos {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+#lista-datos li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+.input-file-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Para que el borde redondeado se aplique correctamente */
+}
+
+.input-file-button {
+  background-color: #f8f9fa; /* Un fondo claro */
+  color: #555;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: inherit; /* Hereda el tamaño de fuente del body */
+  border-right: 1px solid #ccc; /* Separación visual del texto */
+  flex-shrink: 0; /* Evita que el botón se encoja */
+}
+
+.input-file-button:hover {
+  background-color: #e9ecef;
+}
+
+.input-file-name {
+  position: relative; /* Necesario para posicionar el tooltip */
+  padding-left: 10px;
+  font-size: inherit;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.tooltip-active {
+  position: absolute !important; /* Ahora posicionado respecto al viewport */
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/* Ocultar el input de archivo original */
+#imagenDestacada {
+  display: none;
+}
+
+
+/* Estilos para el contenedor de cada noticia */
+.noticia {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden; /* Para que los bordes redondeados funcionen con la imagen */
+  display: flex; /* Para organizar la imagen y el contenido lado a lado en diseños más amplios (opcional) */
+  flex-direction: column; /* Para apilar la imagen y el contenido verticalmente por defecto */
+}
+
+/* Estilos para la imagen */
+.noticia-imagen {
+  width: 100%;
+}
+
+.noticia-imagen img {
+  display: block; /* Evita espacio extra debajo de la imagen */
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Estilos para el contenido de la noticia */
+.noticia-contenido {
+  padding: 20px;
+}
+
+.noticia-titulo {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.noticia-descripcion {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.noticia-meta {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.noticia-categoria {
+  font-weight: bold;
+  color: #007bff; /* Un color distintivo para la categoría */
+}
+
+.boton-leer-mas {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745; /* Un color verde para el botón */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-leer-mas:hover {
+  background-color: #1e7e34;
+}
+
+/* Adaptación para pantallas más grandes (opcional: imagen a la izquierda) */
+@media (min-width: 768px) {
+  .noticia {
+    flex-direction: row; /* Imagen y contenido lado a lado */
+  }
+
+  .noticia-imagen {
+    width: 30%; /* O el ancho que desees para la imagen */
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .noticia-imagen img {
+    height: 100%;
+    object-fit: cover; /* Para que la imagen cubra el contenedor sin deformarse */
+  }
+
+  .noticia-contenido {
+    width: 70%;
+    padding-left: 30px;
+  }
+}

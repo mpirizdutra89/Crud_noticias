@@ -1,0 +1,40 @@
+extends layout
+block content
+    form#formData
+        .campo
+            label(for='titulo') Titulo:
+            input#titulo(type='text' name='titulo' autocomplete='off' required)
+        .campo
+            label(for='descripcion') Descripcion:
+            input#descripcion(type='text' name='descripcion' autocomplete='off' required)
+
+        
+        .campo
+            label(for='categoria') Categoria:
+            select#categoria(name='categoria'  required)
+               
+                if categoria && categoria.length > 0
+                    option(value) Seleccione una categoria
+                    each cate in categoria
+                        option(value=cate) #{cate}
+                else 
+                    option(value=0 ) No hay categorias
+    
+        
+        .campo
+            label(for='fecha') Fecha:
+            input#fecha(type='date' name='fecha' required)
+        
+        .campo.campo-archivo 
+            label(for="imagenDestacada") Imagen:
+            .input-file-container
+                label.input-file-button(for="imagenDestacada") Seleccionar archivo
+                span.input-file-name Ningún archivo seleccionado
+                input#imagenDestacada(type="file" name="imagenDestacada" accept="image/*" required)
+           
+        .botones
+            button(type='reset') Limpiar
+            button(type='submit') Enviar
+    
+    #datos-container
+        p#info

@@ -1,0 +1,17 @@
+extends layout
+block content
+            
+    h4 Listado de noticias
+
+    each nota in noticia
+        .noticia
+            if nota.imagenDestacada
+                .noticia-imagen 
+                    img(src=nota.imagenDestacada, alt=nota.titulo)
+            .noticia-contenido
+                h2.noticia-titulo= nota.titulo
+                p.noticia-descripcion= nota.descripcion.substring(0, 150) + '...'
+                p.noticia-meta
+                    span.noticia-categoria= nota.categoria
+                    span.noticia-fecha= nota.fecha
+                    
